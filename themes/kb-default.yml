@@ -1,0 +1,391 @@
+# KB Default Theme - 17 Filter Types with Rich Jynx Color System
+# Maps universal KB filter types to semantic styling with extended color palette
+
+metadata:
+  name: "kb-default-v1"
+  version: "1.0.0"
+  description: "Default theme for KB system 17 filter types with jynx extended colors"
+  
+compilation:
+  optimize_for: "speed"
+  pattern_limit: 150
+  enable_fast_lookup: true
+
+filters:
+  # === CORE KNOWLEDGE FILTERS ===
+  method:
+    styles:
+      methodology_names:
+        keywords: ["method:", "methodology:", "approach:", "framework:"]
+        color: "royal"
+        bold: true
+        underline: true
+      
+      process_steps:
+        keywords: ["step:", "phase:", "stage:", "procedure:"]
+        color: "azure"
+        italic: true
+        
+      best_practices:
+        keywords: ["best practice", "recommended", "preferred", "standard"]
+        color: "emerald"
+        bold: true
+
+  tool:
+    styles:
+      tool_names:
+        keywords: ["tool:", "command:", "utility:", "script:"]
+        color: "violet"
+        bold: true
+        
+      flags_options:
+        keywords: ["--", "-", "flag:", "option:", "parameter:"]
+        color: "turquoise"
+        italic: true
+        
+      usage_examples:
+        keywords: ["usage:", "example:", "demo:", "sample:"]
+        color: "mint"
+        underline: true
+
+  pattern:
+    styles:
+      pattern_names:
+        keywords: ["pattern:", "template:", "blueprint:", "structure:"]
+        color: "orchid"
+        bold: true
+        underline: true
+        
+      implementation:
+        keywords: ["implement:", "apply:", "use:", "deploy:"]
+        color: "lavender"
+        italic: true
+        
+      benefits:
+        keywords: ["benefit:", "advantage:", "pro:", "strength:"]
+        color: "jade"
+        bold: true
+
+  concept:
+    styles:
+      concept_definitions:
+        keywords: ["concept:", "definition:", "meaning:", "refers to:"]
+        color: "amber"
+        bold: true
+        underline: true
+        
+      key_principles:
+        keywords: ["principle:", "rule:", "law:", "axiom:"]
+        color: "gold"
+        bold: true
+        
+      related_terms:
+        keywords: ["related:", "similar:", "see also:", "compare:"]
+        color: "sand"
+        italic: true
+
+  troubleshoot:
+    styles:
+      critical_errors:
+        keywords: ["FATAL", "CRASH", "PANIC", "CRITICAL ERROR", "EMERGENCY"]
+        color: "crimson"
+        bold: true
+        underline: true
+        
+      errors:
+        keywords: ["ERROR", "FAILED", "FAILURE", "BROKEN", "BUG"]
+        color: "ruby"
+        bold: true
+        
+      warnings:
+        keywords: ["WARNING", "CAUTION", "ALERT", "ISSUE"]
+        color: "tangerine"
+        italic: true
+        
+      symptoms:
+        keywords: ["symptom:", "problem:", "issue:", "behavior:"]
+        color: "lemon"
+        underline: true
+        
+      solutions:
+        keywords: ["solution:", "fix:", "resolution:", "workaround:", "repair:"]
+        color: "emerald"
+        bold: true
+        
+      root_causes:
+        keywords: ["cause:", "reason:", "due to:", "because:", "source:"]
+        color: "rust"
+        italic: true
+
+  # === ORGANIZATIONAL FILTERS ===
+  rule:
+    styles:
+      rule_statements:
+        keywords: ["rule:", "must:", "shall:", "required:", "mandatory:"]
+        color: "crimson"
+        bold: true
+        underline: true
+        
+      guidelines:
+        keywords: ["guideline:", "should:", "recommended:", "preferred:"]
+        color: "amber"
+        bold: true
+        
+      exceptions:
+        keywords: ["except:", "unless:", "exception:", "special case:"]
+        color: "coral"
+        italic: true
+
+  proto:
+    styles:
+      protocol_names:
+        keywords: ["protocol:", "procedure:", "process:", "workflow:"]
+        color: "steel"
+        bold: true
+        underline: true
+        
+      protocol_steps:
+        keywords: ["step:", "action:", "phase:", "checkpoint:"]
+        color: "teal"
+        italic: true
+        
+      requirements:
+        keywords: ["requires:", "needs:", "depends on:", "prerequisite:"]
+        color: "indigo"
+        underline: true
+
+  lore:
+    styles:
+      mythic_references:
+        keywords: ["IX", "pantheon", "divine", "sacred", "mythic"]
+        color: "orchid"
+        bold: true
+        italic: true
+        
+      historical_context:
+        keywords: ["origin:", "history:", "background:", "evolved from:"]
+        color: "mauve"
+        italic: true
+        
+      legendary_patterns:
+        keywords: ["legendary", "epic", "divine pattern", "sacred method"]
+        color: "amethyst"
+        bold: true
+        underline: true
+
+  proj:
+    styles:
+      project_names:
+        keywords: ["project:", "repo:", "codebase:", "system:"]
+        color: "royal"
+        bold: true
+        
+      status_indicators:
+        keywords: ["status:", "state:", "phase:", "milestone:"]
+        color: "azure"
+        italic: true
+        
+      deliverables:
+        keywords: ["deliverable:", "output:", "result:", "artifact:"]
+        color: "mint"
+        underline: true
+
+  # === REFERENCE FILTERS ===
+  lex:
+    styles:
+      term_definitions:
+        keywords: ["term:", "definition:", "means:", "refers to:"]
+        color: "violet"
+        bold: true
+        underline: true
+        
+      acronyms:
+        keywords: ["acronym:", "abbreviation:", "shorthand:"]
+        color: "lavender"
+        italic: true
+        
+      synonyms:
+        keywords: ["synonym:", "also called:", "aka:", "alternative:"]
+        color: "sky"
+        italic: true
+
+  pref:
+    styles:
+      preference_statements:
+        keywords: ["prefer:", "favorite:", "best:", "recommended:"]
+        color: "emerald"
+        bold: true
+        
+      alternatives:
+        keywords: ["alternative:", "option:", "choice:", "consider:"]
+        color: "sage"
+        italic: true
+        
+      rationale:
+        keywords: ["because:", "reason:", "due to:", "benefits:"]
+        color: "jade"
+        underline: true
+
+  strat:
+    styles:
+      strategy_names:
+        keywords: ["strategy:", "approach:", "plan:", "tactic:"]
+        color: "gold"
+        bold: true
+        underline: true
+        
+      objectives:
+        keywords: ["objective:", "goal:", "target:", "aim:"]
+        color: "amber"
+        bold: true
+        
+      success_metrics:
+        keywords: ["metric:", "measure:", "kpi:", "success:"]
+        color: "bronze"
+        italic: true
+
+  # === TASK MANAGEMENT FILTERS ===
+  todo:
+    styles:
+      urgent_tasks:
+        keywords: ["URGENT", "CRITICAL", "ASAP", "EMERGENCY", "BLOCKER"]
+        color: "crimson"
+        bold: true
+        underline: true
+        
+      high_priority:
+        keywords: ["HIGH", "IMPORTANT", "PRIORITY", "priority: high"]
+        color: "tangerine"
+        bold: true
+        
+      completed_tasks:
+        keywords: ["DONE", "COMPLETE", "FINISHED", "RESOLVED", "CLOSED"]
+        color: "emerald"
+        bold: true
+        
+      in_progress:
+        keywords: ["WIP", "IN PROGRESS", "WORKING", "ACTIVE", "status: active"]
+        color: "lemon"
+        italic: true
+        
+      blocked_tasks:
+        keywords: ["BLOCKED", "WAITING", "PAUSED", "STALLED", "PENDING"]
+        color: "ruby"
+        strikethrough: true
+        dim: true
+        
+      assignments:
+        keywords: ["assignee:", "assigned to:", "@", "owner:"]
+        color: "turquoise"
+        underline: true
+        
+      deadlines:
+        keywords: ["deadline:", "due:", "expires:", "target date:"]
+        color: "coral"
+        bold: true
+        underline: true
+
+  # === DOCUMENTATION FILTERS ===
+  doc:
+    styles:
+      document_headings:
+        keywords: ["OVERVIEW", "SUMMARY", "INTRODUCTION", "CONCLUSION"]
+        color: "royal"
+        bold: true
+        underline: true
+        
+      emphasis:
+        keywords: ["important", "critical", "essential", "key", "note:"]
+        color: "amber"
+        italic: true
+        
+      code_references:
+        keywords: ["function", "class", "method", "variable", "const"]
+        color: "turquoise"
+        italic: true
+        
+      external_links:
+        keywords: ["http://", "https://", "www.", ".com", ".org", ".io"]
+        color: "royal"
+        underline: true
+        
+      deprecated_content:
+        keywords: ["DEPRECATED", "OBSOLETE", "LEGACY", "OLD", "REMOVED"]
+        color: "rust"
+        strikethrough: true
+        dim: true
+
+  ref:
+    styles:
+      reference_types:
+        keywords: ["reference:", "spec:", "standard:", "documentation:"]
+        color: "steel"
+        bold: true
+        
+      version_info:
+        keywords: ["version:", "v.", "release:", "build:"]
+        color: "slate"
+        italic: true
+        
+      citations:
+        keywords: ["source:", "cite:", "reference:", "from:"]
+        color: "silver"
+        underline: true
+
+  arch:
+    styles:
+      architectural_components:
+        keywords: ["component:", "service:", "module:", "layer:", "tier:"]
+        color: "royal"
+        bold: true
+        
+      interfaces:
+        keywords: ["API", "interface:", "contract:", "protocol:", "endpoint:"]
+        color: "violet"
+        underline: true
+        
+      data_flow:
+        keywords: ["input:", "output:", "flow:", "stream:", "pipeline:"]
+        color: "jade"
+        italic: true
+        
+      dependencies:
+        keywords: ["depends on:", "requires:", "needs:", "prerequisite:"]
+        color: "bronze"
+        italic: true
+        
+      patterns:
+        keywords: ["pattern:", "architecture:", "design:", "approach:"]
+        color: "amethyst"
+        bold: true
+
+  log:
+    styles:
+      debug_info:
+        keywords: ["DEBUG", "[DEBUG]", "debug:"]
+        color: "charcoal"
+        dim: true
+        
+      info_messages:
+        keywords: ["INFO", "[INFO]", "info:"]
+        color: "azure"
+        
+      warning_logs:
+        keywords: ["WARN", "[WARN]", "warning:"]
+        color: "amber"
+        italic: true
+        
+      error_logs:
+        keywords: ["ERROR", "[ERROR]", "error:"]
+        color: "crimson"
+        bold: true
+        
+      timestamps:
+        keywords: ["2024-", "2025-", ":", "AM", "PM", "UTC"]
+        color: "slate"
+        dim: true
+        
+      identifiers:
+        keywords: ["id:", "uuid:", "session:", "request:", "trace:"]
+        color: "teal"
+        italic: true
